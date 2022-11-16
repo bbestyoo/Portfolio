@@ -1,0 +1,65 @@
+.main{
+    margin-top: 10%;
+    margin-left: 30px;
+}
+.image2{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+.imgt{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.text{
+    width: 500px;
+    margin-top: 10%;
+    
+}
+
+.active-links{
+    display: flex;
+    flex-direction: row;
+  
+
+}
+.tab-links{
+    margin-right: 50px; 
+    cursor: pointer;
+    position: relative;
+   
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    transition: 0.5s;
+
+    
+}
+.tab-links.active-links::after{
+
+    width: 50%;
+}
+.active-tabs li{
+    list-style: none;
+
+}
+.active-tabs li span{
+    color: darkred;
+}
+
+#c2, #c3{
+    display: none;
+}
